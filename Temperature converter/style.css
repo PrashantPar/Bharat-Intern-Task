@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Poppins, sans-serif;
+    color: #0d5370;
+    background: url(myy.jpg);
+    background-size: cover;
+}
+
+.container {
+    background: rgba(26, 97, 184, 0.688);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
+    outline: none;
+    background: rgba(213, 217, 153, 0.158);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: rgb(6, 11, 13);
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: rgb(9, 9, 10);
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
